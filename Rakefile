@@ -9,8 +9,8 @@ Echoe.new('nifty-generators', '0.2.4') do |p|
   p.author         = 'M.E.Patterson (originally Ryan Bates)'
   p.email          = "madraziel (at) gmail (dot) com"
   p.ignore_pattern = ["script/*"]
-  p.runtime_dependencies = ["formtastic"]
   p.development_dependencies = []
 end
 
 Dir["#{File.dirname(__FILE__)}/tasks/*.rake"].sort.each { |ext| load ext }
+
