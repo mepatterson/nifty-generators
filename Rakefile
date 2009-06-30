@@ -4,11 +4,12 @@ require 'echoe'
 
 Echoe.new('nifty-generators', '0.2.4') do |p|
   p.project        = "niftygenerators"
-  p.description    = "A collection of useful generator scripts for Rails."
-  p.url            = "http://github.com/ryanb/nifty-generators"
-  p.author         = 'Ryan Bates'
-  p.email          = "ryan (at) railscasts (dot) com"
+  p.description    = "A collection of useful generator scripts for Rails. Modified by MEPatterson to use Formtastic for HAML forms."
+  p.url            = "http://github.com/mepatterson/nifty-generators"
+  p.author         = 'M.E.Patterson (originally Ryan Bates)'
+  p.email          = "madraziel (at) gmail (dot) com"
   p.ignore_pattern = ["script/*"]
+  p.runtime_dependencies = ["formtastic"]
   p.development_dependencies = []
 end
 
